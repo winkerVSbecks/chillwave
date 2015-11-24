@@ -1,0 +1,68 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 4px solid #262626;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 110px;
+  margin: 0 auto;
+  width: 110px;
+}
+
+svg {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#wave {
+  stroke-dasharray: 0 16 101 16;
+  -webkit-animation: moveTheWave 2400ms linear infinite;
+          animation: moveTheWave 2400ms linear infinite;
+}
+
+@-webkit-keyframes moveTheWave {
+  0% {
+    stroke-dashoffset: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: -133;
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+}
+
+@keyframes moveTheWave {
+  0% {
+    stroke-dashoffset: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    stroke-dashoffset: -133;
+    -webkit-transform: translate3d(-90px, 0, 0);
+            transform: translate3d(-90px, 0, 0);
+  }
+}
